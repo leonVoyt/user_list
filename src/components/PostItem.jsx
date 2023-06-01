@@ -10,7 +10,7 @@ const PostItem = function (props) {
     <div className="post">
       <div className="post_content">
         <strong>
-          {props.post.id + '.'} {props.post.title}
+          {props.number + '.'} {props.post.title}
         </strong>
         <div>{props.post.body}</div>
       </div>
