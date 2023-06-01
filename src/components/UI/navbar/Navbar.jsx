@@ -17,8 +17,12 @@ function Navbar() {
         <MyButton onClick={UnLogin}>Exit</MyButton>
       </div>
       <div className="navbar__links">
-        <Link to="/about">About</Link>
-        <Link to="/posts">Posts</Link>
+        <Link to="/about">
+          <MyButton>About</MyButton>
+        </Link>
+        <Link to="/Posts">
+          <MyButton>Posts</MyButton>
+        </Link>
       </div>
     </div>
   )
