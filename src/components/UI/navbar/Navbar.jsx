@@ -16,13 +16,20 @@ function Navbar() {
       <div className="exit">
         <MyButton onClick={UnLogin}>Exit</MyButton>
       </div>
-      <div className="navbar__links">
-        <Link to="/about">
-          <MyButton>About</MyButton>
-        </Link>
-        <Link to="/Posts">
-          <MyButton>Posts</MyButton>
-        </Link>
+      <div className="navbar__links" style={{ display: 'flex' }}>
+        <div
+          className="about_page"
+          style={{ display: 'flex', marginInline: 20 }}
+        >
+          <Link to="/about">
+            <MyButton>About</MyButton>
+          </Link>
+        </div>
+        <div className="post_page">
+          <Link to="/Posts">
+            <MyButton>Posts</MyButton>
+          </Link>
+        </div>
       </div>
     </div>
   )

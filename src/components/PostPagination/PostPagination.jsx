@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import classes from './PostPagination.module.css'
 import { usePagination } from '../hooks/usePagination'
 const PostPagination = function ({ page, setPage, totalPages }) {

@@ -81,7 +81,7 @@ function PostPage() {
         <PostList
           remove={deletePost}
           posts={sortedAndSearchedPosts}
-          title={'1 List'}
+          title={`${page && page} page`}
         />
       )}
 
