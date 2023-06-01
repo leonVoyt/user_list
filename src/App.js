@@ -20,6 +20,7 @@ function App() {
     <AuthContext.Provider value={{ isAuth, setIsAuth: setIsAuth, isLoading }}>
       <BrowserRouter>
         <Navbar />
+
         <AppRouter />
       </BrowserRouter>
     </AuthContext.Provider>
